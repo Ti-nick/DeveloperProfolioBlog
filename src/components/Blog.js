@@ -82,9 +82,7 @@ export function Blog() {
       <section id="blog" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl mb-4">Developer Blog</h2>
-          <p className="text-muted-foreground">
-            No posts yet. Add one from your Add Blog page.
-          </p>
+          <p className="text-muted-foreground">No posts yet.</p>
         </div>
       </section>
     );
