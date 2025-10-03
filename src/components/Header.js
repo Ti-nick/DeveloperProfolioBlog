@@ -33,9 +33,9 @@ export function Header() {
   const handleLogout = async () => {
     await signOut(auth);
     if (auth.currentUser) {
-      alert("Logged out successfully!");
-    } else {
       alert("Failed to log out.");
+    } else {
+      alert("Logged out successfully!");
     }
     navigate("/"); // redirect to home (or login page)
   };
