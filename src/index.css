@@ -15,3 +15,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-pattern{
+background-color: #ffffff;
+opacity: 1;
+background-image:  linear-gradient(#f0f8fa 2.2px, transparent 2.2px), linear-gradient(90deg, #f0f8fa 2.2px, transparent 2.2px), linear-gradient(#f0f8fa 1.1px, transparent 1.1px), linear-gradient(90deg, #f0f8fa 1.1px, #ffffff 1.1px);
+background-size: 55px 55px, 55px 55px, 11px 11px, 11px 11px;
+background-position: -2.2px -2.2px, -2.2px -2.2px, -1.1px -1.1px, -1.1px -1.1px;
+}

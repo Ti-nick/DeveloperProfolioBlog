@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center text-center py-20 md:py-32"
+      className="min-h-screen flex items-center justify-center text-center py-20 md:py-32 bg-pattern"
     >
       <div className="container px-4">
         <div className="grid grid-cols-1 items-center justify-items-center">
@@ -28,7 +28,7 @@ export function Hero() {
             <div className="flex justify-center items-center space-x-4">
               <Link
                 to="/projects"
-                className="inline-flex items-center justify-center rounded-md bg-foreground px-6 py-3 text-lg font-medium text-background shadow hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-lg font-medium text-background shadow hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
                 View My Work
               </Link>
