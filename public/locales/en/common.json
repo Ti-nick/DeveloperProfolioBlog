@@ -1,5 +1,7 @@
 {
-  "site": { "title": "Nick Choi - IT Studio" },
+  "site": {
+    "title": "Nick Tech Simplified"
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -7,6 +9,21 @@
     "blog": "Blog",
     "contact": "Contact"
   },
+  "hero": {
+    "title": "Hey there, I'm Nick!",
+    "subtitle": "Full Stack Independent Developer",
+    "description": "Providing web developing, cloud solutions, and other IT services.",
+    "view_my_work": "View My Work"
+  },
+    "footer": {
+      "quote": "Focus and create values.",
+      "menu": "Menu",
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
   "auth": {
     "logout": "Logout",
     "loggedOut": "Logged out successfully!",

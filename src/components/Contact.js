@@ -1,15 +1,17 @@
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Contact() {
+  const { t, i18n } = useTranslation("contact");
   return (
     <section id="contact" className="py-20">
       <div className="container px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl mb-4">Get In Touch</h2>
+            <h2 className="text-3xl md:text-4xl mb-4">{t("contact_heading")}
+            </h2>
             <p className="text-muted-foreground">
-              Have a project in mind or just want to chat? I'd love to hear from
-              you.
+              {t("contact_subheading")}
             </p>
           </div>
 
@@ -17,7 +19,9 @@ export function Contact() {
           <div className="grid gap-12">
             {/* Contact Info */}
             <div className="text-center space-y-6">
-              <h3 className="text-xl">Contact Information</h3>
+              <h3 className="text-xl">
+                {t("contact_info_heading")}
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-center justify-center gap-3">
                   <Mail className="h-5 w-5 text-muted-foreground" />
@@ -29,16 +33,22 @@ export function Contact() {
               <span></span>
             </div> 
             */}
-                <div className="flex items-center justify-center gap-3">
+                <a href="http://www.instagram.com/easytechwithnick" target="_blank" className="flex items-center justify-center underline gap-3">
+                  <Instagram className="h-5 w-5 text-muted-foreground" />
+                  <span>@easytechwithnick</span>
+                </a>
+                {/* <div className="flex items-center justify-center gap-3">
                   <MapPin className="h-5 w-5 text-muted-foreground" />
                   <span>Melbourne, Australia</span>
-                </div>
+                </div> */}
               </div>
             </div>
 
             {/* Follow Me */}
             <div className="text-center space-y-6">
-              <h3 className="text-xl">Follow Me</h3>
+              <h3 className="text-xl">
+                {t("follow_me")}
+              </h3>
               <div className="flex items-center justify-center gap-4">
                 <a
                   href="https://github.com/Ti-nick"

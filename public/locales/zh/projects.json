@@ -1,0 +1,38 @@
+{
+    "site": {
+        "title": "精選項目",
+        "title_description": "以下是我過往的作品和參與的項目。",
+        "live_demo": "前往"
+    },
+    "projects_data": {
+        "project1": {
+            "id": 1,
+            "title": "日程管理程式",
+            "description": "協助自由職業者管理每日任務的全方位解決方案，採用 React.js 和 AWS 技術。功能包括Google登入、任務分配、模板管理和進度追蹤。",
+            "image": "FDS",
+            "technologies": [
+                "React",
+                "AWS",
+                "DynamoDB",
+                "Lambda"
+            ],
+            "project_type":"網頁式應用程式",
+            "liveUrl": "https://www.freelancer-daily-scheduler.site/",
+            "githubUrl": "#"
+        },
+        "project2": {
+            "id": 2,
+            "title": "活動管理公司網站",
+            "description": "為一家台灣Pride活動管理公司打造的響應式網站，採用 Vue.js、Firebase 和 AWS 技術。提供活動日曆、藝人檔案和後端管理功能。",
+            "image": "RTW",
+            "technologies": [
+                "Vue.js",
+                "AWS",
+                "Firebase"
+            ],
+            "project_type":"網站",
+            "liveUrl": "https://reputation-tw.site/",
+            "githubUrl": "#"
+        }
+    }
+}

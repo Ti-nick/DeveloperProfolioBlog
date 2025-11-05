@@ -1,19 +1,20 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t, i18n } = useTranslation("common");
 
   return (
     <footer className="border-t bg-muted/30">
       <div className="container px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
           {/* Developer Info */}
           <div className="space-y-4">
             <h3 className="font-medium">Nick Choi</h3>
             <p className="text-sm text-muted-foreground">
-              Full Stack Developer passionate about creating exceptional digital
-              experiences.
+              ‘{t("footer.quote")}’
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -32,48 +33,56 @@ export function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
+              <a
+                href="http://www.instagram.com/easytechwithnick"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
             </div>
           </div>
 
           {/* Navigation */}
-          <div className="space-y-4">
-            <h3 className="font-medium">Navigation</h3>
+          {/* <div className="space-y-4">
+            <h3 className="font-medium">{t("footer.menu")}</h3>
             <div className="space-y-2 text-sm">
               <Link
                 to="/"
                 className="block text-muted-foreground hover:text-foreground transition-colors"
               >
-                Home
+                {t("footer.home")}
               </Link>
               <Link
                 to="/about"
                 className="block text-muted-foreground hover:text-foreground transition-colors"
               >
-                About
+                {t("footer.about")}
               </Link>
               <Link
                 to="/projects"
                 className="block text-muted-foreground hover:text-foreground transition-colors"
               >
-                Projects
+                {t("footer.projects")}
               </Link>
               <Link
                 to="/blog"
                 className="block text-muted-foreground hover:text-foreground transition-colors"
               >
-                Blog
+                {t("footer.blog")}
               </Link>
               <Link
                 to="/contact"
                 className="block text-muted-foreground hover:text-foreground transition-colors"
               >
-                Contact
+                {t("footer.contact")}
               </Link>
             </div>
-          </div>
+          </div> */}
 
           {/* Services */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="font-medium">Services</h3>
             <div className="space-y-2 text-sm">
               <span className="block text-muted-foreground">
@@ -86,16 +95,7 @@ export function Footer() {
                 Technical Consulting
               </span>
             </div>
-          </div>
-
-          {/* Contact Info */}
-          <div className="space-y-4">
-            <h3 className="font-medium">Contact</h3>
-            <div className="space-y-2 text-sm text-muted-foreground">
-              <p>nick.choi.it@gmail.com</p>
-              <p>Melbourne, Australia</p>
-            </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Copyright */}

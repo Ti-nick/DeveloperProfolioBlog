@@ -1,33 +1,52 @@
 import { ExternalLink, Github } from "lucide-react";
 import FDS from "../assets/FDS.png";
-
-const projects = [
-  {
-    id: 1,
-    title: "Task Management App",
-    description:
-      "A full-stack task management solution with React and AWS. Features include user authentication, task assignment, template management, and progress tracking.",
-    image: FDS,
-    technologies: ["React", "AWS", "DynamoDB", "Lambda"],
-    liveUrl: "https://www.freelancer-daily-scheduler.site/",
-    githubUrl: "#",
-  },
-];
+import RTW from "../assets/RTW.png";
+import { useTranslation } from "react-i18next";
 
 export function Projects() {
+  const { t, i18n } = useTranslation("projects");
+
+  const projects = [
+    {
+      id: "project1",
+      title: "Task Management App",
+      description:
+        "A full-stack task management solution with React and AWS. Features include user authentication, task assignment, template management, and progress tracking.",
+      image: FDS,
+      technologies: ["React.js", "AWS", "DynamoDB", "Lambda"],
+      project_type: ["Web Application"],
+      liveUrl: "https://www.freelancer-daily-scheduler.site/",
+      githubUrl: "#",
+    },
+    {
+      id: "project2",
+      title: "Event Company Website",
+      description:
+        "A responsive website for an event management company built with Vue, Firebase and AWS. It offers event calendar, artist profiles, backend management.",
+      image: RTW,
+      technologies: ["Vue.js", "AWS", "Firebase"],
+      project_type: ["Website"],
+      liveUrl: "https://reputation-tw.site/",
+      githubUrl: "#",
+    },
+  ];
+
   return (
     <section id="projects" className="py-20 bg-muted/30">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl mb-4">Featured Projects</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">{t("site.title")}</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Here are some of my recent projects that showcase my skills in
-            full-stack development, cloud computing, and problem-solving.
+            {t("site.title_description")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
+          {projects.map((project) => {
+            const title = t(`projects_data.${project.id}.title`);
+            const description = t(`projects_data.${project.id}.description`);
+            const typeLabel = t(`projects_data.${project.id}.project_type`);
+            return (
             <div
               key={project.id}
               className="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm"
@@ -44,22 +63,22 @@ export function Projects() {
               {/* Header */}
               <div className="p-6 pb-0">
                 <h3 className="text-lg font-semibold leading-none mb-2 tracking-tight">
-                  {project.title}
+                  {title}
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  {project.description}
+                  {description}
                 </p>
               </div>
 
               {/* Content */}
               <div className="p-6 pt-4">
                 <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
+                  {project.project_type.map((type) => (
                     <span
-                      key={tech}
+                      key={type}
                       className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
                     >
-                      {tech}
+                      {typeLabel}
                     </span>
                   ))}
                 </div>
@@ -75,7 +94,7 @@ export function Projects() {
                   className="inline-flex items-center gap-2 rounded-md border border-input bg-background px-3 py-2 text-sm font-medium text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
                   <ExternalLink className="h-4 w-4" />
-                  Live Demo
+                  {t("site.live_demo")}
                 </a>
                 {/* <a
                   href={project.githubUrl}
@@ -89,7 +108,7 @@ export function Projects() {
                 </a> */}
               </div>
             </div>
-          ))}
+          )})}
         </div>
       </div>
     </section>

@@ -1,6 +1,23 @@
 {
-  "site": { "title": "Nick Choi - 獨立開發" },
+  "site": {
+    "title": "Nick 科技簡化"
+  },
   "nav": {
+    "home": "首頁",
+    "about": "關於",
+    "projects": "作品",
+    "blog": "文章",
+    "contact": "聯絡"
+  },
+  "hero": {
+    "title": "Hey there, I'm Nick!",
+    "subtitle": "全端獨立開發人員",
+    "description": "提供 網端建議、雲端解決方案及其他IT技術服務。",
+    "view_my_work": "查看過往作品"
+  },
+  "footer": {
+    "quote": "專注並創造價值。",
+    "menu": "目錄",
     "home": "首頁",
     "about": "關於",
     "projects": "作品",

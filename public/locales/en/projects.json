@@ -1,0 +1,38 @@
+{
+    "site": {
+        "title": "Featured Projects",
+        "title_description": "Here are my previous works and projects I've worked on.",
+        "live_demo": "Live Demo"
+    },
+    "projects_data": {
+        "project1": {
+            "id": 1,
+            "title": "Task Management App",
+            "description": "A full-stack task management solution with React.js and AWS. Features include google login, task assignment, template management, and progress tracking.",
+            "image": "FDS",
+            "technologies": [
+                "React",
+                "AWS",
+                "DynamoDB",
+                "Lambda"
+            ],
+            "project_type":"Web Application",
+            "liveUrl": "https://www.freelancer-daily-scheduler.site/",
+            "githubUrl": "#"
+        },
+        "project2": {
+            "id": 2,
+            "title": "Event Company Website",
+            "description": "A responsive website for an event management company built with Vue.js, Firebase and AWS. It offers event calendar, artist profiles, backend management.",
+            "image": "RTW",
+            "technologies": [
+                "Vue.js",
+                "AWS",
+                "Firebase"
+            ],
+            "project_type":"Website",
+            "liveUrl": "https://reputation-tw.site/",
+            "githubUrl": "#"
+        }
+    }
+}

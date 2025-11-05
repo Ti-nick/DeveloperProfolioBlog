@@ -50,9 +50,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 flex h-16 items-center justify-between">
-        <Link to="/" className="text-xl font-medium">
-          {t("site.title", "Nick Choi - Developer Blog")}
-        </Link>
+        <NavLink to="/" key="nav.home" className="text-xl font-medium">
+          {t("site.title")}
+        </NavLink>
 
         {/* Desktop */}
         <nav className="hidden md:flex items-center space-x-6">
