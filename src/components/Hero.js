@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center text-center py-20 md:py-32 bg-pattern"
+      className="min-h-screen flex items-center justify-center text-center py-20 md:py-32 bg-deeper-pattern"
     >
       <div className="container px-4">
         <div className="grid grid-cols-1 items-center justify-items-center">

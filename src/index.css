@@ -23,3 +23,11 @@ background-image:  linear-gradient(#f0f8fa 2.2px, transparent 2.2px), linear-gra
 background-size: 55px 55px, 55px 55px, 11px 11px, 11px 11px;
 background-position: -2.2px -2.2px, -2.2px -2.2px, -1.1px -1.1px, -1.1px -1.1px;
 }
+
+.bg-deeper-pattern{
+background-color: #ffffff;
+opacity: 1;
+background-image:  linear-gradient(#edf4f9 2.8000000000000003px, transparent 2.8000000000000003px), linear-gradient(90deg, #edf4f9 2.8000000000000003px, transparent 2.8000000000000003px), linear-gradient(#edf4f9 1.4000000000000001px, transparent 1.4000000000000001px), linear-gradient(90deg, #edf4f9 1.4000000000000001px, #ffffff 1.4000000000000001px);
+background-size: 55px 55px, 55px 55px, 11px 11px, 11px 11px;
+background-position: -2.2px -2.2px, -2.2px -2.2px, -1.1px -1.1px, -1.1px -1.1px;
+}

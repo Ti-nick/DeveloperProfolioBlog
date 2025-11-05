@@ -13,9 +13,9 @@ export function Header() {
 
   const navItems = [
     { to: "/", key: "nav.home" },
-    { to: "/about", key: "nav.about" },
+    // { to: "/about", key: "nav.about" },
     { to: "/projects", key: "nav.projects" },
-    { to: "/blog", key: "nav.blog" },
+    { to: "/blog", key: "nav.learning_diary" },
     { to: "/contact", key: "nav.contact" },
   ];
 

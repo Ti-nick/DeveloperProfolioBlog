@@ -3,12 +3,14 @@ import { useEffect, useMemo, useState } from "react";
 import { db } from "../firebase";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { Calendar, Clock, ChevronLeft, ChevronRight, User } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Blog() {
   const [posts, setPosts] = useState([]); // Firestore posts
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { t, i18n } = useTranslation("learningDiary");
 
   // Subscribe to BlogPost collection
   useEffect(() => {
@@ -81,7 +83,9 @@ export function Blog() {
     return (
       <section id="blog" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl mb-4">Developer Blog</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">{
+            t("title")
+            }</h2>
           <p className="text-muted-foreground">No posts yet.</p>
         </div>
       </section>
@@ -93,9 +97,11 @@ export function Blog() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl mb-4">Developer Blog</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">{
+            t("title")
+            }</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Insights, thoughts, and reflections
+            { t("subtitle") }
           </p>
         </div>
 
@@ -172,7 +178,7 @@ export function Blog() {
               className="inline-flex items-center gap-2 rounded-md border px-3 py-2 text-sm font-medium shadow-sm hover:bg-gray-100"
             >
               <ChevronLeft className="h-4 w-4" />
-              Previous
+              {t("previous")}
             </button>
 
             {/* Numbered Navigator */}
@@ -197,7 +203,7 @@ export function Blog() {
               onClick={goNext}
               className="inline-flex items-center gap-2 rounded-md border px-3 py-2 text-sm font-medium shadow-sm hover:bg-gray-100"
             >
-              Next
+              {t("next")}
               <ChevronRight className="h-4 w-4" />
             </button>
           </div>

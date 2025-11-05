@@ -6,7 +6,7 @@
     "home": "首頁",
     "about": "關於",
     "projects": "作品",
-    "blog": "文章",
+    "learning_diary": "學習日記",
     "contact": "聯絡"
   },
   "hero": {
@@ -21,7 +21,7 @@
     "home": "首頁",
     "about": "關於",
     "projects": "作品",
-    "blog": "文章",
+    "learning_diary": "學習日記",
     "contact": "聯絡"
   },
   "auth": {

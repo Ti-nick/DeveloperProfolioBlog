@@ -32,7 +32,7 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
+    <section id="projects" className="py-20 bg-muted/30 ">
       <div className="container px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl mb-4">{t("site.title")}</h2>

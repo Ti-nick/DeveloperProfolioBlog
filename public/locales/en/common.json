@@ -6,7 +6,7 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
-    "blog": "Blog",
+    "learning_diary": "Learning Diary",
     "contact": "Contact"
   },
   "hero": {
@@ -21,7 +21,7 @@
       "home": "Home",
       "about": "About",
       "projects": "Projects",
-      "blog": "Blog",
+      "learning_diary": "Learning Diary",
       "contact": "Contact"
     },
   "auth": {
