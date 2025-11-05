@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer className="border-t bg-muted/30">
       <div className="container px-4 py-12">
-        <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {/* Developer Info */}
           <div className="space-y-4">
             <h3 className="font-medium">Nick Choi</h3>
