@@ -1,7 +1,9 @@
 {
     "site": {
-        "title": "Featured Projects",
-        "title_description": "Here are my previous works and projects I've worked on.",
+        "real_title": "Featured Cases",
+        "real_title_description": "Here are my previous real world projects I've worked on.",
+        "practice_title": "Practice Examples",
+        "practice_title_description": "Here are some practice examples for reference.",
         "live_demo": "Live Demo"
     },
     "projects_data": {
@@ -32,6 +34,20 @@
             ],
             "project_type":"Website",
             "liveUrl": "https://reputation-tw.site/",
+            "githubUrl": "#"
+        },
+        "project3": {
+            "id": 3,
+            "title": "Nutrition Education Australia",
+            "description": "A responsive website for a nutrition education organisation built with Vue, Firebase and AWS. It offers nutrition consultation booking service, recipe listing, and backend management.",
+            "image": "NEA",
+            "technologies": [
+                "Vue.js",
+                "AWS",
+                "Firebase"
+            ],
+            "project_type":"Website",
+            "liveUrl": "https://main.d1i2uhjw00tqqg.amplifyapp.com/",
             "githubUrl": "#"
         }
     }

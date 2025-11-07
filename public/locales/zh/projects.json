@@ -1,7 +1,9 @@
 {
     "site": {
-        "title": "精選項目",
-        "title_description": "以下是我過往的作品和參與的項目。",
+        "real_title": "精選案例",
+        "real_title_description": "以下是我過去參與的真實專案。",
+        "practice_title": "練習範例",
+        "practice_title_description": "以下是一些練習範例供參考。",
         "live_demo": "前往"
     },
     "projects_data": {
@@ -32,6 +34,20 @@
             ],
             "project_type":"網站",
             "liveUrl": "https://reputation-tw.site/",
+            "githubUrl": "#"
+        },
+        "project3": {
+            "id": 3,
+            "title": "營養教育網站(練習範例供參考)",
+            "description": "為一家澳洲營養教育機構打造的響應式網站，採用 Vue.js、Firebase 和 AWS 技術。提供營養諮詢預約服務、食譜列表和後端管理功能。",
+            "image": "NEA",
+            "technologies": [
+                "Vue.js",
+                "AWS",
+                "Firebase"
+            ],
+            "project_type":"網站",
+            "liveUrl": "https://main.d1i2uhjw00tqqg.amplifyapp.com/",
             "githubUrl": "#"
         }
     }
