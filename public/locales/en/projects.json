@@ -49,6 +49,18 @@
             "project_type":"Website",
             "liveUrl": "https://main.d1i2uhjw00tqqg.amplifyapp.com/",
             "githubUrl": "#"
+        },
+        "project4": {
+            "id": 4,
+            "title": "Birthbook - Birthday Reminder",
+            "description":
+                "Birthbook is an iOS application developed to help users organise and track birthdays in a simple, lightweight way. The app includes features such as customisable local notifications, widget support for at-a-glance reminders, and a clean interface focused on ease of use. It was built to explore iOS app architecture, data persistence, and the full App Store submission process. It also reached No. 12 on the local App Store Productivity chart.",
+            "image": "Birthbook",
+            "technologies": ["Swift"],
+            "project_type": ["IOS App"],
+            "liveUrl": "https://apps.apple.com/au/app/birthbook-birthday-reminder/id6755174931?l=en-GB",
+            "githubUrl": "#",
+            "type": "real"
         }
     }
 }

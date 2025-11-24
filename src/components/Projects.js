@@ -3,6 +3,7 @@ import FDS from "../assets/FDS.png";
 import RTW from "../assets/RTW.png";
 import { useTranslation } from "react-i18next";
 import NEA from "../assets/NEA.png";
+import Birthbook from "../assets/Birthbook.png";
 
 export function Projects() {
   const { t, i18n } = useTranslation("projects");
@@ -43,6 +44,18 @@ export function Projects() {
       liveUrl: "https://main.d1i2uhjw00tqqg.amplifyapp.com/",
       githubUrl: "#",
       type: "practice",
+    },
+    {
+      id: "project4",
+      title: "Birthbook",
+      description:
+        "A responsive website for a nutrition education organisation built with Vue, Firebase and AWS. It offers nutrition consultation booking service, recipe listing, and backend management.",
+      image: Birthbook,
+      technologies: ["Swift"],
+      project_type: ["IOS App"],
+      liveUrl: "https://apps.apple.com/au/app/birthbook-birthday-reminder/id6755174931?l=en-GB",
+      githubUrl: "#",
+      type: "real",
     },
   ];
 

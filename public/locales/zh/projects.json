@@ -49,6 +49,18 @@
             "project_type":"網站",
             "liveUrl": "https://main.d1i2uhjw00tqqg.amplifyapp.com/",
             "githubUrl": "#"
+        },
+        "project4": {
+            "id": 4,
+            "title": "Birthbook - 生日提醒",
+            "description":
+                "Birthbook 是一款用於簡單記錄與管理生日的 iOS 應用程式。它提供可自訂時間的本地通知、Widget 小工具，以及以易用性為核心的簡潔介面。這個專案同時讓我實作並探索了 iOS 應用架構、資料持久化，以及完整的 App Store 上架流程。曾登上當地App Store生產力榜第12名。",
+            "image": "Birthbook",
+            "technologies": ["Swift"],
+            "project_type": ["IOS 應用"],
+            "liveUrl": "https://apps.apple.com/au/app/birthbook-birthday-reminder/id6755174931?l=en-GB",
+            "githubUrl": "#",
+            "type": "real"
         }
     }
 }
