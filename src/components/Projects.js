@@ -76,69 +76,68 @@ export function Projects() {
             const description = t(`projects_data.${project.id}.description`);
             const typeLabel = t(`projects_data.${project.id}.project_type`);
             return (
-            <div
-              key={project.id}
-              className="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm"
-            >
-              {/* Image */}
-              <div className="aspect-video relative">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="object-cover w-full h-full"
-                />
-              </div>
+              // Project Card
+              <div
+                key={project.id}
+                className="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col"
+              >
+                {/* Card Image Area */}
+                <div className="relative w-full h-[250px]">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
 
-              {/* Header */}
-              <div className="p-6 pb-0">
-                <h3 className="text-lg font-semibold leading-none mb-2 tracking-tight">
-                  {title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {description}
-                </p>
-              </div>
+                {/* Card Text Area */}
+                <div className="p-6 pb-0 flex flex-col flex-grow gap-2">
+                  {/* Title + Badge Row */}
+                  <div className="flex justify-between items-center mb-2">
+                    <h3 className="text-lg font-semibold leading-none tracking-tight">
+                      {title}
+                    </h3>
 
-              {/* Content */}
-              <div className="p-6 pt-4">
-                <div className="flex flex-wrap gap-2">
-                  {project.project_type.map((type) => (
-                    <span
-                      key={type}
-                      className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+                    {/* Badge */}
+                    <div className="flex gap-2">
+                      {project.project_type.map((type) => (
+                        <span
+                          key={type}
+                          className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+                        >
+                          {typeLabel}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Description — flex-grow so it pushes footer down */}
+                  <p className="text-sm text-muted-foreground flex-grow pb-4">
+                    {description}
+                  </p>
+
+                  {/* Link Button */}
+                  <div className="pb-4">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`${project.title} live demo`}
+                      className="inline-flex items-center gap-2 rounded-md border 
+                      border-input bg-background px-3 py-2 text-sm font-medium 
+                      text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground 
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                      focus-visible:ring-offset-2"
                     >
-                      {typeLabel}
-                    </span>
-                  ))}
+                      <ExternalLink className="h-4 w-4" />
+                      {t("site.live_demo")}
+                    </a>
+                  </div>
                 </div>
               </div>
-
-              {/* Footer */}
-              <div className="p-6 pt-0 flex justify-between">
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`${project.title} live demo`}
-                  className="inline-flex items-center gap-2 rounded-md border border-input bg-background px-3 py-2 text-sm font-medium text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                >
-                  <ExternalLink className="h-4 w-4" />
-                  {t("site.live_demo")}
-                </a>
-                {/* <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`${project.title} source code on GitHub`}
-                  className="inline-flex items-center gap-2 rounded-md border border-input bg-background px-3 py-2 text-sm font-medium text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                >
-                  <Github className="h-4 w-4" />
-                  Code
-                </a> */}
-              </div>
-            </div>
-          )})}
-        </div>        
+            )
+          })}
+        </div>
       </div>
 
       {/* Real */}
@@ -156,68 +155,68 @@ export function Projects() {
             const description = t(`projects_data.${project.id}.description`);
             const typeLabel = t(`projects_data.${project.id}.project_type`);
             return (
-            <div
-              key={project.id}
-              className="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm"
-            >
-              {/* Image */}
-              <div className="aspect-video relative">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="object-cover w-full h-full"
-                />
-              </div>
+              
+              // Project Card
+              <div
+                key={project.id}
+                className="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col"
+              >
+                {/* Card Image Area */}
+                <div className="relative w-full h-[250px]">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
 
-              {/* Header */}
-              <div className="p-6 pb-0">
-                <h3 className="text-lg font-semibold leading-none mb-2 tracking-tight">
-                  {title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {description}
-                </p>
-              </div>
+                {/* Card Text Area */}
+                <div className="p-6 pb-0 flex flex-col flex-grow gap-2">
+                  {/* Title + Badge Row */}
+                  <div className="flex justify-between items-center mb-2">
+                    <h3 className="text-lg font-semibold leading-none tracking-tight">
+                      {title}
+                    </h3>
 
-              {/* Content */}
-              <div className="p-6 pt-4">
-                <div className="flex flex-wrap gap-2">
-                  {project.project_type.map((type) => (
-                    <span
-                      key={type}
-                      className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+                    {/* Badge */}
+                    <div className="flex gap-2">
+                      {project.project_type.map((type) => (
+                        <span
+                          key={type}
+                          className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+                        >
+                          {typeLabel}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Description — flex-grow so it pushes footer down */}
+                  <p className="text-sm text-muted-foreground flex-grow pb-4">
+                    {description}
+                  </p>
+
+                  {/* Link Button */}
+                  <div className="pb-4">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`${project.title} live demo`}
+                      className="inline-flex items-center gap-2 rounded-md border 
+                      border-input bg-background px-3 py-2 text-sm font-medium 
+                      text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground 
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                      focus-visible:ring-offset-2"
                     >
-                      {typeLabel}
-                    </span>
-                  ))}
+                      <ExternalLink className="h-4 w-4" />
+                      {t("site.live_demo")}
+                    </a>
+                  </div>
                 </div>
               </div>
-
-              {/* Footer */}
-              <div className="p-6 pt-0 flex justify-between">
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`${project.title} live demo`}
-                  className="inline-flex items-center gap-2 rounded-md border border-input bg-background px-3 py-2 text-sm font-medium text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                >
-                  <ExternalLink className="h-4 w-4" />
-                  {t("site.live_demo")}
-                </a>
-                {/* <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`${project.title} source code on GitHub`}
-                  className="inline-flex items-center gap-2 rounded-md border border-input bg-background px-3 py-2 text-sm font-medium text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                >
-                  <Github className="h-4 w-4" />
-                  Code
-                </a> */}
-              </div>
-            </div>
-          )})}
+            )
+          })}
         </div>
       </div>
     </section>
