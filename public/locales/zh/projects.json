@@ -61,6 +61,18 @@
             "liveUrl": "https://apps.apple.com/au/app/birthbook-birthday-reminder/id6755174931?l=en-GB",
             "githubUrl": "#",
             "type": "real"
+        },
+        "project5": {
+            "id": 5,
+            "title": "Raj Driving School",
+            "description":
+                "為一家駕駛學校打造的響應式網站，採用 Vue.js 技術，整合了 Square 預約與付款系統。",
+            "image": "RajDrivingSchool",
+            "technologies": ["Vue.js", "Square Payment"],
+            "project_type": ["Website"],
+            "liveUrl": "https://rajdrivingschool.online/",
+            "githubUrl": "#",
+            "type": "real"
         }
     }
 }

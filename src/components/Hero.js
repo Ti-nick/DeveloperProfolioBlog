@@ -1,5 +1,4 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-import IMG_1526 from "../assets/IMG_1526.jpg";
 import { NavLink, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

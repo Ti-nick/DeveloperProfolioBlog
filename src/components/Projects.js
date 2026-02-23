@@ -4,6 +4,7 @@ import RTW from "../assets/RTW.png";
 import { useTranslation } from "react-i18next";
 import NEA from "../assets/NEA.png";
 import Birthbook from "../assets/Birthbook.png";
+import RajDrivingSchool from "../assets/driving.png";
 
 export function Projects() {
   const { t, i18n } = useTranslation("projects");
@@ -54,6 +55,18 @@ export function Projects() {
       technologies: ["Swift"],
       project_type: ["IOS App"],
       liveUrl: "https://apps.apple.com/au/app/birthbook-birthday-reminder/id6755174931?l=en-GB",
+      githubUrl: "#",
+      type: "real",
+    },
+    {
+      id: "project5",
+      title: "Raj Driving School",
+      description:
+        "A responsive website for a driving school built with Vue, it merged the Square Appointment and Payment system.",
+      image: RajDrivingSchool,
+      technologies: ["Vue.js", "Square Payment"],
+      project_type: ["Website"],
+      liveUrl: "https://rajdrivingschool.online/",
       githubUrl: "#",
       type: "real",
     },
