@@ -12,7 +12,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8">
           {/* Developer Info */}
           <div className="space-y-4">
-            <h3 className="font-medium">Nick Choi</h3>
+            <h3 className="font-medium">Blue Ambr Technology</h3>
             <p className="text-sm text-muted-foreground">
               ‘{t("footer.quote")}’
             </p>
@@ -34,7 +34,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="http://www.instagram.com/easytechwithnick"
+                href="http://www.instagram.com/blue_ambr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -100,7 +100,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="border-t mt-12 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} Nick Choi. All rights reserved.</p>
+          <p>&copy; {currentYear} Blue Ambr Technology. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -33,9 +33,9 @@ export function Contact() {
               <span></span>
             </div> 
             */}
-                <a href="http://www.instagram.com/easytechwithnick" target="_blank" className="flex items-center justify-center underline gap-3">
+                <a href="http://www.instagram.com/blue_ambr" target="_blank" className="flex items-center justify-center underline gap-3">
                   <Instagram className="h-5 w-5 text-muted-foreground" />
-                  <span>@easytechwithnick</span>
+                  <span>@blue_ambr</span>
                 </a>
                 {/* <div className="flex items-center justify-center gap-3">
                   <MapPin className="h-5 w-5 text-muted-foreground" />

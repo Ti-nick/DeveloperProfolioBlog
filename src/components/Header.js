@@ -4,6 +4,7 @@ import { NavLink, Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useTranslation } from "react-i18next";
+import logo from "../assets/logo_tran.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +52,10 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 flex h-16 items-center justify-between">
         <NavLink to="/" key="nav.home" className="text-xl font-medium">
+        <div className="flex items-center gap-1">
+          <img src={logo} alt="Logo" className="h-8 w-auto" />
           {t("site.title")}
+        </div>
         </NavLink>
 
         {/* Desktop */}
